@@ -12,9 +12,15 @@
 		2970D6E11C5A991A0041CD63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2970D6DF1C5A991A0041CD63 /* Main.storyboard */; };
 		2970D6E31C5A991A0041CD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2970D6E21C5A991A0041CD63 /* Assets.xcassets */; };
 		2970D6E61C5A991A0041CD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2970D6E41C5A991A0041CD63 /* LaunchScreen.storyboard */; };
+		29A2D88C1C5AE6EA00F387CB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2D88B1C5AE6EA00F387CB /* PhotoCell.swift */; };
+		29D6BE8E1C5A9C7A002586CF /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6BE8D1C5A9C7A002586CF /* PhotosViewController.swift */; };
+		D038DED0CB6DD6A09888FC78 /* Pods_Instegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAFD4B2676BC519CA70F0B9 /* Pods_Instegram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032482EDA159F995CCA40B2B /* Pods-Instegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instegram/Pods-Instegram.debug.xcconfig"; sourceTree = "<group>"; };
+		09B0D47F7D4736A34D287BD6 /* Pods-Instegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instegram/Pods-Instegram.release.xcconfig"; sourceTree = "<group>"; };
+		1EAFD4B2676BC519CA70F0B9 /* Pods_Instegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2970D6D81C5A991A0041CD63 /* Instegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2970D6DB1C5A991A0041CD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2970D6DD1C5A991A0041CD63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		2970D6E21C5A991A0041CD63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2970D6E51C5A991A0041CD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2970D6E71C5A991A0041CD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A2D88B1C5AE6EA00F387CB /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		29D6BE8D1C5A9C7A002586CF /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D038DED0CB6DD6A09888FC78 /* Pods_Instegram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A89C88F28C6CABCE4D0FA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				032482EDA159F995CCA40B2B /* Pods-Instegram.debug.xcconfig */,
+				09B0D47F7D4736A34D287BD6 /* Pods-Instegram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2970D6CF1C5A991A0041CD63 = {
 			isa = PBXGroup;
 			children = (
 				2970D6DA1C5A991A0041CD63 /* Instegram */,
 				2970D6D91C5A991A0041CD63 /* Products */,
+				03A89C88F28C6CABCE4D0FA3 /* Pods */,
+				91DF2C8A70A53BEA7302B2B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +80,18 @@
 				2970D6E21C5A991A0041CD63 /* Assets.xcassets */,
 				2970D6E41C5A991A0041CD63 /* LaunchScreen.storyboard */,
 				2970D6E71C5A991A0041CD63 /* Info.plist */,
+				29D6BE8D1C5A9C7A002586CF /* PhotosViewController.swift */,
+				29A2D88B1C5AE6EA00F387CB /* PhotoCell.swift */,
 			);
 			path = Instegram;
+			sourceTree = "<group>";
+		};
+		91DF2C8A70A53BEA7302B2B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EAFD4B2676BC519CA70F0B9 /* Pods_Instegram.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2970D6EA1C5A991A0041CD63 /* Build configuration list for PBXNativeTarget "Instegram" */;
 			buildPhases = (
+				C064DAED5F90D29D521DC78E /* Check Pods Manifest.lock */,
 				2970D6D41C5A991A0041CD63 /* Sources */,
 				2970D6D51C5A991A0041CD63 /* Frameworks */,
 				2970D6D61C5A991A0041CD63 /* Resources */,
+				B519AB7CE59FCC345F26F868 /* Embed Pods Frameworks */,
+				AC29C27CC0CAB30C3B4E5599 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +163,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC29C27CC0CAB30C3B4E5599 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instegram/Pods-Instegram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B519AB7CE59FCC345F26F868 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instegram/Pods-Instegram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C064DAED5F90D29D521DC78E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2970D6D41C5A991A0041CD63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2D88C1C5AE6EA00F387CB /* PhotoCell.swift in Sources */,
+				29D6BE8E1C5A9C7A002586CF /* PhotosViewController.swift in Sources */,
 				2970D6DE1C5A991A0041CD63 /* ViewController.swift in Sources */,
 				2970D6DC1C5A991A0041CD63 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +330,7 @@
 		};
 		2970D6EB1C5A991A0041CD63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032482EDA159F995CCA40B2B /* Pods-Instegram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instegram/Info.plist;
@@ -258,6 +342,7 @@
 		};
 		2970D6EC1C5A991A0041CD63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B0D47F7D4736A34D287BD6 /* Pods-Instegram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instegram/Info.plist;
@@ -286,6 +371,7 @@
 				2970D6EC1C5A991A0041CD63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

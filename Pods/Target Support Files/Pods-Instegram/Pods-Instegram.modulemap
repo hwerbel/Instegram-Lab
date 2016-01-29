@@ -1,0 +1,6 @@
+framework module Pods_Instegram {
+  umbrella header "Pods-Instegram-umbrella.h"
+
+  export *
+  module * { export * }
+}
