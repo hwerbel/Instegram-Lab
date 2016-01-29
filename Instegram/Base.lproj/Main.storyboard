@@ -13,20 +13,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JVq-oQ-JnD">
-                                <rect key="frame" x="59" y="1" width="261" height="567"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="263" sectionHeaderHeight="28" sectionFooterHeight="28" id="JVq-oQ-JnD">
+                                <rect key="frame" x="0.0" y="1" width="320" height="567"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Dwf-p2-f4Z" customClass="PhotoCell" customModule="Instegram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="261" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="Dwf-p2-f4Z" customClass="PhotoCell" customModule="Instegram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="263"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dwf-p2-f4Z" id="XlG-pW-3Nc">
-                                            <rect key="frame" x="0.0" y="0.0" width="261" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="moC-hN-jT2">
-                                                    <rect key="frame" x="-10" y="-29" width="271" height="81"/>
+                                                    <rect key="frame" x="-10" y="27" width="330" height="235"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>

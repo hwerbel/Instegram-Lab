@@ -9,7 +9,7 @@
 import UIKit
 import AFNetworking
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,6 +23,8 @@ class PhotosViewController: UIViewController {
         tableView.rowHeight = 320
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        tableView.registerClass(PhotoCell.self, forCellReuseIdentifier: "PhotoCell")
+        
         
         let clientId = "e05c462ebd86446ea48a5af73769b602"
         let url = NSURL(string:"https://api.instagram.com/v1/media/popular?client_id=\(clientId)")
@@ -69,12 +71,15 @@ class PhotosViewController: UIViewController {
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell
-        
+
         let photo = photos![indexPath.row]
-        if let imagePath = photo["images.low_resolution.url"] as? String {
+        let imagePath = photo.valueForKeyPath("images.low_resolution.url") as! String
+            print("photo\(imagePath)")
             let imageUrl = NSURL(string: imagePath)
+            print("url\(imageUrl)")
             cell.photoView.setImageWithURL(imageUrl!)
-        }
+        
+        
         
         
         
