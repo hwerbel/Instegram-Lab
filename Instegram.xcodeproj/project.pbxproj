@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295DF8811C64091200E952E5 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295DF8801C64091200E952E5 /* PhotoDetailsViewController.swift */; };
+		295DF8831C64135300E952E5 /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295DF8821C64135300E952E5 /* InfiniteScrollActivityView.swift */; };
 		2970D6DC1C5A991A0041CD63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970D6DB1C5A991A0041CD63 /* AppDelegate.swift */; };
 		2970D6E11C5A991A0041CD63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2970D6DF1C5A991A0041CD63 /* Main.storyboard */; };
 		2970D6E31C5A991A0041CD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2970D6E21C5A991A0041CD63 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		032482EDA159F995CCA40B2B /* Pods-Instegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instegram/Pods-Instegram.debug.xcconfig"; sourceTree = "<group>"; };
 		09B0D47F7D4736A34D287BD6 /* Pods-Instegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instegram/Pods-Instegram.release.xcconfig"; sourceTree = "<group>"; };
 		1EAFD4B2676BC519CA70F0B9 /* Pods_Instegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		295DF8801C64091200E952E5 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		295DF8821C64135300E952E5 /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
 		2970D6D81C5A991A0041CD63 /* Instegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2970D6DB1C5A991A0041CD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2970D6E01C5A991A0041CD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				2970D6E71C5A991A0041CD63 /* Info.plist */,
 				29D6BE8D1C5A9C7A002586CF /* PhotosViewController.swift */,
 				29A2D88B1C5AE6EA00F387CB /* PhotoCell.swift */,
+				295DF8801C64091200E952E5 /* PhotoDetailsViewController.swift */,
+				295DF8821C64135300E952E5 /* InfiniteScrollActivityView.swift */,
 			);
 			path = Instegram;
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295DF8831C64135300E952E5 /* InfiniteScrollActivityView.swift in Sources */,
+				295DF8811C64091200E952E5 /* PhotoDetailsViewController.swift in Sources */,
 				29A2D88C1C5AE6EA00F387CB /* PhotoCell.swift in Sources */,
 				29D6BE8E1C5A9C7A002586CF /* PhotosViewController.swift in Sources */,
 				2970D6DC1C5A991A0041CD63 /* AppDelegate.swift in Sources */,
