@@ -111,7 +111,7 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if (!isMoreDataLoading) {
             let scrollViewContentHeight = tableView.contentSize.height
-            let scrollViewOffsetThreshhold = scrollViewContentHeight - tableView.bounds.size.height
+            let scrollViewOffsetThreshhold = 0.75*scrollViewContentHeight
             
             if (scrollView.contentOffset.y > scrollViewOffsetThreshhold && tableView.dragging) {
                 isMoreDataLoading = true
